@@ -1,0 +1,25 @@
+{
+  "name": "serverless-api-layers-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Monorepo for serverless-api-layers framework, documentation, tests and examples.",
+  "workspaces": [
+    "packages/*",
+    "playground/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "test": "pnpm -r run test"
+  },
+  "license": "MIT",
+  "author": "Steven Tabango",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "ts-node": "^10.9.1",
+    "vitest": "^1.2.0"
+  }
+}

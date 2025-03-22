@@ -1,0 +1,43 @@
+{
+  "name": "serverless-api-layers",
+  "version": "0.1.0",
+  "description": "Build validated, layered, and event-driven APIs on Serverless architecture.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node src/index.ts",
+    "test": "vitest"
+  },
+  "keywords": [
+    "serverless",
+    "api",
+    "backend",
+    "framework",
+    "data",
+    "lambda",
+    "dynamodb",
+    "zod",
+    "typescript",
+    "event-driven"
+  ],
+  "author": "Steven Tabango",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zbango/serverless-api-layers.git"
+  },
+  "peerDependencies": {
+    "zod": "^3.22.4",
+    "@aws-sdk/client-dynamodb": "^3.472.0",
+    "@aws-sdk/util-dynamodb": "^3.472.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.1",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

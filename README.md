@@ -14,14 +14,14 @@ It helps you define your **entities**, expose them via **validated APIs**, and s
 
 ## ✅ Why this framework?
 
-| Feature                     | Description                                                               |
-|----------------------------|---------------------------------------------------------------------------|
-| ⚙️ Serverless Native        | Designed from the ground up for AWS Lambda + API Gateway + DynamoDB       |
-| 🧩 Schema-first Logic       | Use Zod to define and validate your entities and API inputs                |
-| 🚀 Rapid API Exposure       | Create endpoints with type-safe input/output and built-in rate limiting   |
-| 🧠 Entity-centric Modeling  | Group logic by entity (e.g. Order, User, Product) in a single-table design|
-| 🔐 Built-in Protections     | Support for authorization, namespacing, and rate limiting                 |
-| 🔁 Event-ready (soon)       | React to DynamoDB Streams, SQS, SNS, or cron jobs                         |
+| Feature                    | Description                                                                |
+| -------------------------- | -------------------------------------------------------------------------- |
+| ⚙️ Serverless Native       | Designed from the ground up for AWS Lambda + API Gateway + DynamoDB        |
+| 🧩 Schema-first Logic      | Use Zod to define and validate your entities and API inputs                |
+| 🚀 Rapid API Exposure      | Create endpoints with type-safe input/output and built-in rate limiting    |
+| 🧠 Entity-centric Modeling | Group logic by entity (e.g. Order, User, Product) in a single-table design |
+| 🔐 Built-in Protections    | Support for authorization, namespacing, and rate limiting                  |
+| 🔁 Event-ready (soon)      | React to DynamoDB Streams, SQS, SNS, or cron jobs                          |
 
 ---
 
@@ -34,8 +34,8 @@ It helps you define your **entities**, expose them via **validated APIs**, and s
 ```ts
 // Example route
 api.POST('/orders', OrderInput, OrderOutput, async ({ input }) => {
-  return await DeliverySystem.Order.put(input);
-});
+  return await DeliverySystem.Order.put(input)
+})
 ```
 
 ---
@@ -54,11 +54,11 @@ api.POST('/orders', OrderInput, OrderOutput, async ({ input }) => {
 
 Your API is composed of three fundamental layers:
 
-| Layer                | Role                                                                 |
-|----------------------|----------------------------------------------------------------------|
-| Presentation Layer   | Defines how external clients interact via HTTP endpoints             |
-| Business Logic Layer | Validates inputs, applies rules and controls the flow of operations  |
-| Data Storage Layer   | Handles structured reads/writes to your database (DynamoDB)          |
+| Layer                | Role                                                                |
+| -------------------- | ------------------------------------------------------------------- |
+| Presentation Layer   | Defines how external clients interact via HTTP endpoints            |
+| Business Logic Layer | Validates inputs, applies rules and controls the flow of operations |
+| Data Storage Layer   | Handles structured reads/writes to your database (DynamoDB)         |
 
 **serverless-api-layers** covers all three, making it a complete backend foundation.
 
@@ -67,6 +67,7 @@ Your API is composed of three fundamental layers:
 ## 🔭 Status
 
 This framework is in early development, but stable for:
+
 - Schema definition with `zod`
 - API exposure with validation
 - Rate limiting via DynamoDB
