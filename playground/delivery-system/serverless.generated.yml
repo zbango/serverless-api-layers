@@ -1,0 +1,46 @@
+service: serverless-api-layers
+provider:
+  name: aws
+  runtime: nodejs18.x
+  iamRoleStatements:
+    - Effect: Allow
+      Action: dynamodb:PutItem
+      Resource:
+        Fn::GetAtt:
+          - delivery-system-table
+          - Arn
+    - Effect: Allow
+      Action: dynamodb:GetItem
+      Resource:
+        Fn::GetAtt:
+          - delivery-system-table
+          - Arn
+    - Effect: Allow
+      Action: dynamodb:PutItem
+      Resource:
+        Fn::GetAtt:
+          - delivery-system-table
+          - Arn
+    - Effect: Allow
+      Action: dynamodb:GetItem
+      Resource:
+        Fn::GetAtt:
+          - delivery-system-table
+          - Arn
+resources:
+  Resources:
+    delivery-system-table:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: delivery-system-table
+        AttributeDefinitions:
+          - AttributeName: pk
+            AttributeType: S
+          - AttributeName: sk
+            AttributeType: S
+        KeySchema:
+          - AttributeName: pk
+            KeyType: HASH
+          - AttributeName: sk
+            KeyType: RANGE
+        BillingMode: PAY_PER_REQUEST

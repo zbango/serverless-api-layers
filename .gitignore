@@ -68,3 +68,9 @@ pnpm-debug.log*
 .eslintcache
 .stylelintcache
 tsconfig.tsbuildinfo
+
+# Notes
+notes/
+
+# Cursor
+.cursor/
