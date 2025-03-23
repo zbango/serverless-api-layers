@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/zbango/serverless-api-layers/compare/v1.0.0...v1.1.0) (2025-03-23)
+
+
+### Features
+
+* Add package manager ([e1cbfef](https://github.com/zbango/serverless-api-layers/commit/e1cbfef770995a4d3ae0c5abd857192a374fed66))
+* Bump new version ([2ddae37](https://github.com/zbango/serverless-api-layers/commit/2ddae379c365a97749506c365cca749ccfa2bdcc))
+* Bump version ([6d88229](https://github.com/zbango/serverless-api-layers/commit/6d8822914f3870646c11eebdbd348c15f95fcd16))
+* Deploy to npm in workflow ([0b4d090](https://github.com/zbango/serverless-api-layers/commit/0b4d09042b01b5cb24b42accdc644fe12852e2e7))
+* Remove --frozen-lockfile ([3c62f55](https://github.com/zbango/serverless-api-layers/commit/3c62f55d0830c70ce310f2194a696493c9b0d643))
+* Update lint ([8f0b42b](https://github.com/zbango/serverless-api-layers/commit/8f0b42bad1499a07aeffbbe6e7d78decb34edcb6))
+* Update lock ([ae5ba7c](https://github.com/zbango/serverless-api-layers/commit/ae5ba7c2d3fc05c1f95bf5ceecd32f0f6316d3b2))
+
 # 1.0.0 (2025-03-23)
 
 
