@@ -32,6 +32,7 @@
     "@aws-sdk/util-dynamodb": "^3.772.0",
     "zod": "^3.24.2"
   },
+  "packageManager": "pnpm@10.6.5",
   "devDependencies": {
     "@aws-sdk/client-dynamodb": "^3.772.0",
     "@aws-sdk/util-dynamodb": "^3.772.0",
