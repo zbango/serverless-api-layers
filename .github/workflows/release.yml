@@ -37,8 +37,7 @@ jobs:
       - name: Build package
         run: pnpm build
 
-      - name: Run semantic release
+      - name: Publish with changesets
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: pnpm changeset publish

@@ -1,5 +1,6 @@
 {
   "name": "serverless-api-layers",
+  "version": "1.0.0",
   "description": "Build validated, layered, and event-driven APIs on Serverless architecture.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
