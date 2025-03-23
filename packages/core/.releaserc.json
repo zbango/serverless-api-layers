@@ -11,5 +11,6 @@
         "message": "chore(release): New changeset description [skip ci]\n\n${nextRelease.notes}"
       }
     ]
-  ]
+  ],
+  "tagFormat": false
 }
