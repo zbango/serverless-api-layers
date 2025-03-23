@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/zbango/serverless-api-layers/compare/v1.1.0...v1.2.0) (2025-03-23)
+
+
+### Features
+
+* Publish npm package ([16934d0](https://github.com/zbango/serverless-api-layers/commit/16934d05828aff143a481bca2474958f8463f58f))
+
 # [1.1.0](https://github.com/zbango/serverless-api-layers/compare/v1.0.0...v1.1.0) (2025-03-23)
 
 
