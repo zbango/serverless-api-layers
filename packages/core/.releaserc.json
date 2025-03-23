@@ -1,10 +1,15 @@
 {
   "branches": ["main"],
-  "tagFormat": "v${version}",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/git"
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md", "package.json"],
+        "message": "chore(release): New changeset description [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
   ]
 }
