@@ -25,6 +25,9 @@ jobs:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
 
+      - name: Downgrade npm (workaround)
+        run: npm install -g npm@8
+
       - name: Install pnpm
         run: npm install -g pnpm
 
