@@ -11,9 +11,9 @@ jobs:
   release:
     name: Semantic Release
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/core
+    # defaults:
+    #   run:
+    #     working-directory: packages/core
 
     steps:
       - name: Checkout repo
