@@ -5,7 +5,12 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@anolilab/semantic-release-pnpm",
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "packages/core"
+      }
+    ],
     "@semantic-release/git"
   ]
 }
